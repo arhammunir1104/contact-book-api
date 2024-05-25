@@ -42,7 +42,7 @@ let UserDataSchema  = new mongoose.Schema({
 
 UserDataSchema.methods.generateAuthToken  = async function(){
     try{
-        let token = jwt.sign({_id: this._id}, process.env.SECRET_KEY);
+        let token = jwt.sign({_id: this._id}, "akjbaskdbajkjdbakskajbdalksdnakdbaskjdbakdsdnajsdbkjasdbah");
         this.tokens = this.tokens.concat({token: token});
         // console.log("Token Generated in Model 2", token); Checking if the token has been generated 
         await this.save()
