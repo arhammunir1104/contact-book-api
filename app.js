@@ -81,7 +81,7 @@ app.post("/register", (req, res)=>{
     insertdata();
 })
 
-app.post("/login", (req, res)=>{
+app.post("/login", cors(corsOptions) ,(req, res)=>{
     async function getData (){
         let {email, password} = req.body;
         try{
