@@ -13,7 +13,7 @@ let cors = require("cors")
 
 // Cors Setup 
 let corsOptions = {
-    origin: "http://localhost:5173/",
+    origin: "https://contact-saving-book.vercel.app/",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     creddentials: true
 }
