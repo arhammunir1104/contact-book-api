@@ -16,7 +16,6 @@ let corsOptions = {
     origin: ["https://contact-saving-book.vercel.app/"],
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     creddentials: true,
-    optionsSuccessStatus: 204,
 }
 app.use(cors(corsOptions))
 
