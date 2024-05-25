@@ -87,6 +87,8 @@ app.post("/login", cors(corsOptions) ,(req, res)=>{
     async function getData (){
         let {email, password} = req.body;
         console.log(req.body);
+        console.log("BODY", req.body);
+        console.log("Email", req.body.email);
         try{
             let data= await UserData.findOne({email: email});
             console.log(data);
