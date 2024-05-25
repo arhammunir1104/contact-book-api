@@ -9,6 +9,7 @@ let UserData = require("./src/models/UserData")
 let bcrypt = require("bcryptjs")
 let verification = require("./middleware/verification")
 let cors = require("cors")
+let bodyParser = require('body-parser');
 
 
 // Cors Setup 
