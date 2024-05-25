@@ -87,6 +87,7 @@ app.post("/register", (req, res)=>{
 app.post("/login", cors(corsOptions) ,(req, res)=>{
     async function getData (){
         let {email, password} = req.body;
+        console.log(req.body);
         try{
             let data= await UserData.findOne({email: email});
             console.log(data);
@@ -152,7 +153,7 @@ app.post("/createContact", (req, res)=>{
                      email: email,
                       phone: phone,
                 }
-                console.log(data.contacts.length)
+                // console.log(data.contacts.length)
                 data.contacts.push(contact);
                 await data.save()
                 console.log(data);
