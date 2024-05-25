@@ -95,14 +95,14 @@ app.post("/login", cors(corsOptions) ,(req, res)=>{
             let verify = await bcrypt.compare(password, data.password);
             if(verify === true){
                 let token = await data.generateAuthToken();
-                res.status(200).json({verified : true, msg: "Login Successfully", token: token}).header("Access-Control-Allow-Origin", "*");
+                res.status(200).json({verified : true, msg: "Login Successfully", token: token});
             }
             else{
-                res.status(400).json({verified : false ,msg: "Wrong Password"}).header("Access-Control-Allow-Origin", "*");
+                res.status(400).json({verified : false ,msg: "Wrong Password"});
             }
             }
             else{
-                res.send({msg: "Accound not found"}).header("Access-Control-Allow-Origin", "*");
+                res.send({msg: "Accound not found"});
             }
         }
         catch(e){
