@@ -13,11 +13,12 @@ let cors = require("cors")
 
 // Cors Setup 
 let corsOptions = {
-    origin: "https://contact-saving-book.vercel.app/",
+    origin: ["https://contact-saving-book.vercel.app/"],
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
-    creddentials: true
+    creddentials: true,
+    optionsSuccessStatus: 204,
 }
-app.use(cors())
+app.use(cors(corsOptions))
 
 app.use(express.urlencoded({extended: false}))
 
