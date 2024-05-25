@@ -81,6 +81,11 @@ app.post("/register", (req, res)=>{
     insertdata();
 })
 
+
+app.options('/login', cors(corsOptions), (req, res) => {
+    res.sendStatus(200); // Respond with OK to the preflight request
+  });
+  
 app.post("/login", cors(corsOptions) ,(req, res)=>{
     async function getData (){
         let {email, password} = req.body;
