@@ -7,7 +7,7 @@ app.use(express.json())
 let db = require("./src/db/db")
 let UserData = require("./src/models/UserData")
 let bcrypt = require("bcryptjs")
-let verification = require("./middleware/verification")
+let verification = require("./middleware/verification");
 let cors = require("cors")
 let bodyParser = require('body-parser');
 
@@ -16,6 +16,7 @@ let bodyParser = require('body-parser');
 let corsOptions = {
     origin: ["https://contact-saving-book.vercel.app/"],
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
+    allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin', ],
     creddentials: true,
 }
 app.use(cors(corsOptions))
