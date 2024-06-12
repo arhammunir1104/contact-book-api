@@ -1,0 +1,21 @@
+[debug] [2024-06-12T15:58:28.449Z] ----------------------------------------------------------------------
+[debug] [2024-06-12T15:58:28.452Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Tesla Laptops\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-12T15:58:28.452Z] CLI Version:   13.11.2
+[debug] [2024-06-12T15:58:28.453Z] Platform:      win32
+[debug] [2024-06-12T15:58:28.453Z] Node Version:  v20.12.2
+[debug] [2024-06-12T15:58:28.453Z] Time:          Wed Jun 12 2024 08:58:28 GMT-0700 (Pacific Daylight Time)
+[debug] [2024-06-12T15:58:28.453Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-12T15:58:28.460Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-12T15:58:28.460Z] > authorizing via signed-in user (arhammunir1104@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\programs\mern projects\contact book\backend
+
