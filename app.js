@@ -16,7 +16,7 @@ let bodyParser = require('body-parser');
 let corsOptions = {
     origin: 'https://contact-book-63496.web.app',
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
-    // allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
     creddentials: true,
     optionsSuccessStatus: 204
 }
