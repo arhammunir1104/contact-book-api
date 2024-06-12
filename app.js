@@ -115,7 +115,7 @@ app.post("/login", cors(corsOptions) ,(req, res)=>{
         }
     };
     getData()
-})
+});
 
 app.post("/getContacts", (req, res)=>{
     async function getContacts(){
