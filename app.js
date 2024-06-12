@@ -16,15 +16,16 @@ let bodyParser = require('body-parser');
 let corsOptions = {
     origin: ["https://contact-book-63496.web.app/"],
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
-    allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
+    // allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
     creddentials: true,
+    optionsSuccessStatus: 204
 }
-app.use(cors(corsOptions))
-
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(bodyParser.urlencoded({ extended: false })); 
 app.use(bodyParser.json());
+app.use(cors(corsOptions))
+
 
 app.get("/", (req, res)=>{
     res.send("hello wordl")
